@@ -4,11 +4,11 @@
  */
 var permute = function(nums) {
     let res = [[nums.shift()]];
-    console.log("nums ->", nums)
+    // console.log("nums ->", nums)
     while (nums.length) {
         let num = nums.shift();
-        console.log("num ->",num)
-        console.log("res ->", res)
+        // console.log("num ->",num)
+        // console.log("res ->", res)
         let temp = [];
 
         for (let i = 0; i < res.length; i++) {
@@ -20,10 +20,10 @@ var permute = function(nums) {
             }
         }
         res = temp;
-        console.log("res ->", res)
+        // console.log("res ->", res)
     }
     return res;
 };
 
-var nums = [1,2,3,4]
+var nums = [1,2,4]
 console.log(permute(nums))
