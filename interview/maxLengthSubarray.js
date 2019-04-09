@@ -1,7 +1,11 @@
 'use strict';
 // max length subarray
 // canvas interview
-
+/**
+ *
+ * @param [Array] a
+ * @param Int k
+ */
 function maxLength(a, k) {
 // Write your code here
     let sum = 0;
